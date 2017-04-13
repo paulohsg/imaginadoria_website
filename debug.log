@@ -1,0 +1,8 @@
+[0412/205951.563:ERROR:exception_snapshot_win.cc(87)] thread ID 2300 not found in process
+[0412/205951.579:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0412/205952.110:ERROR:process_info.cc(343)] VirtualQueryEx: Acesso negado. (0x5)
+[0412/205952.110:ERROR:process_info.cc(564)] ReadMemoryInfo failed
+[0412/205952.110:ERROR:process_reader_win.cc(233)] ReadMemory at 0x72837dc8 of 12 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
+[0412/205952.110:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0412/205952.110:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0412/205952.110:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Tentou-se acessar um processo de saída.  (0xc000010a)

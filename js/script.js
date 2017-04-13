@@ -26,6 +26,13 @@ $(document).ready(function(){
 
 	    		});
 
+	    	$('#top-button').addClass('animated flipOutX').stop();
+		     		$('#top-button').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		     			$(this).removeClass("animated flipOutX");
+		     			$('#top-button').css("display", "none");
+
+		     		});
+
     }else{
     	$('.toLeft').addClass('animated fadeOut');
         $('.toLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -35,6 +42,13 @@ $(document).ready(function(){
      		$('#logovo-list').css('display', 'block');
      		$('#logovo-navbar').addClass('animated flipInX').stop();
      		$('#logovo-navbar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated flipInX");
+
+     		});
+
+     		$('#top-button').css("display", "block");
+     		$('#top-button').addClass('animated flipInX').stop();
+     		$('#top-button').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
      			$(this).removeClass("animated flipInX");
 
      		});

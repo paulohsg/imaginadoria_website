@@ -25,7 +25,7 @@
 
 
 		<nav id="nav" class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
+			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<!--
@@ -34,12 +34,6 @@
 			        </a>
 			        -->
 
-
-					<!--
-			        <a href="#about" title="about" id="button-top">
-			        	<img src="img/seta_menu_2.svg" height="50px" width="50px" alt="">
-			        </a>
-			        -->
 						<div  class="responsive-navbar-button">
 							<span class="cls"></span>
 							<span>
@@ -72,15 +66,21 @@
 						<li class="toLeft"><a class="underline_animate" href="#products-main">CONTATOS</a></li>
 					</ul>
 
+					<ul id="top-button" class="nav navbar-nav navbar-left" style="display: none;">
+						<li>
+							<a href="#" title="about" id="button-top">
+					        	<img src="img/seta_menu_2.png" height="50px" width="50px" alt="">
+					        </a>
+						</li>
+					</ul>
 
 
-
-					<ul id="logovo-list" class="nav navbar-nav navbar-anim" style="visibility: visible; display: none;">
+					<ul id="logovo-list" class="nav navbar-nav navbar-center" style="visibility: visible; display: none;">
 						<li id="logovo-navbar" class="dropdown center-block">
 							<a id="link-button-logovo-navbar" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="">
 								<img id="img-logovo-navbar" src="img/logovo.png" height="80px" width="65.59" alt="">
 							</a>
-							<ul class="dropdown-menu dropdown-menu-center">
+							<ul id="logovo-dropdown-menu" class="dropdown-menu dropdown-menu-center">
 								<li><a href="" target="blank">PERFIL</a></li>
 								<li><a href="" target="blank">SERVIÇOS</a></li>
 								<li><a href="" target="blank">PORTFÓLIO</a></li>
