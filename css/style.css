@@ -190,10 +190,6 @@ body{
     display: inline-block;
     right: 0;
 }
-.item img{
-	margin: 0 auto;
-}
-
 
 
 
@@ -624,16 +620,36 @@ textarea:focus ~ .highlight {
   transition: all 0.5s ease;
 }
 
-#profile-eduardo{
+.profile-eduardo-closed{
   margin-right: inherit;
   transition: all 0.5s ease;
 }
 
-#profile-eduardo:hover{
+.profile-eduardo-open{
   margin-right: 30%;
   transition: all 0.5s ease;
 }
 
 .carousel-inner{
   height: 500px;
+}
+
+#about-description{
+  height: inherit;
+  background-color: rgb(255, 222, 78);
+}
+
+#about-profiles{
+  height: inherit;
+  background-color: rgb(139, 204, 192);
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
 }

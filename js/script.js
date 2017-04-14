@@ -186,4 +186,70 @@ $(document).ready(function() {
 
 	})
 
+
+	$('#profile-eduardo').on('click', function(){
+
+		
+
+
+	});
+
+	
+
 });
+
+function open_eduardo_profile(){
+
+
+	if($('#profile-eduardo').hasClass('profile-eduardo-open')){
+     	$('#profile-eduardo-description').addClass('animated flipOutX').stop();
+     	$('#profile-eduardo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     		$(this).removeClass("animated flipOutX");
+     		$('#profile-eduardo-description').css("display", "none");
+
+     		$('#profile-eduardo').removeClass("profile-eduardo-open");
+			$('#profile-eduardo').addClass("profile-eduardo-closed");
+
+     		$('#container-profile-paulo').css('display', 'block');
+
+     		$('#profile-paulo').addClass('animated fadeIn').stop();
+     		$('#profile-paulo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated fadeIn");
+     			
+
+     		});
+
+     	});
+
+	}else{
+		$('#profile-eduardo').removeClass("profile-eduardo-closed");
+		$('#profile-eduardo').addClass("profile-eduardo-open");
+
+     		$('#profile-paulo').addClass('animated fadeOut').stop();
+     		$('#profile-paulo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated fadeOut");
+     			$('#container-profile-paulo').css('display', 'none');
+
+     			$('#profile-eduardo-description').css("display", "block");
+     			$('#profile-eduardo-description').addClass('animated flipInX').stop();
+     			$('#profile-eduardo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     				$(this).removeClass("animated flipInX");
+
+     			});
+
+     		});
+
+	}
+
+
+	
+
+
+	
+
+
+	
+
+}
+
+

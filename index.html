@@ -142,13 +142,11 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div id="about" class="carousel-inner" role="listbox">
-      <div class="item active">
+      <div id="about-description" class="item active">
         <div class="container">
         	<div class="row">
         	<div class="col-md-12">
@@ -176,14 +174,22 @@
         </div>
       </div>
 
-      <div class="item">
+      <div id="about-profiles" class="item">
         <div class="container">
         	<div class="row">
-        		<div class="col-md-6">
-        			<img class="center-block" id="profile-eduardo" src="img/icon_1.png" height="300px" alt="">
+        		<div id="container-profile-eduardo" class="col-md-6">
+        			<img class="center-block profile-eduardo-closed" id="profile-eduardo" src="img/icon_1.png" height="300px" alt="" onclick="open_eduardo_profile()">
         		</div>
-        		<div class="col-md-6">
-        			<img class="center-block" id="profile-paulo" src="img/icon_2.png" height="300px" alt="">
+        		<div id="profile-eduardo-description" class="col-md-6" style="display: none;">
+        			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        		</div>
+        		<div id="container-profile-paulo" class="col-md-6">
+        			<img class="center-block profile-paulo-closed" id="profile-paulo" src="img/icon_2.png" height="300px" alt="">
         		</div>
         	</div>
         </div>
