@@ -20,6 +20,10 @@ body{
   width: initial;
 }
 
+#top-button li{
+  padding-top: 10px;
+}
+
 #logovo-list{
       position: absolute;
     left: 0px;
@@ -602,4 +606,34 @@ textarea:focus ~ .highlight {
   visibility: hidden;
   font-size: 18px;
   margin-left: 5px;
+}
+
+
+/*ABOUT*/
+#about{
+  margin-top: 50px;
+}
+
+#profile-paulo{
+  margin-left: inherit;
+  transition: all 0.5s ease;
+}
+
+#profile-paulo:hover{
+  margin-left: 30%;
+  transition: all 0.5s ease;
+}
+
+#profile-eduardo{
+  margin-right: inherit;
+  transition: all 0.5s ease;
+}
+
+#profile-eduardo:hover{
+  margin-right: 30%;
+  transition: all 0.5s ease;
+}
+
+.carousel-inner{
+  height: 500px;
 }
