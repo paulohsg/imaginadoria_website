@@ -186,23 +186,13 @@ $(document).ready(function() {
 
 	})
 
-
-	$('#profile-eduardo').on('click', function(){
-
-		
-
-
-	});
-
-	
-
 });
 
 function open_eduardo_profile(){
 	if($('#profile-eduardo').hasClass('profile-eduardo-open')){
-     	$('#profile-eduardo-description').addClass('animated flipOutX').stop();
+     	$('#profile-eduardo-description').addClass('animated fadeOut').stop();
      	$('#profile-eduardo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-     		$(this).removeClass("animated flipOutX");
+     		$(this).removeClass("animated fadeOut");
      		$('#profile-eduardo-description').css("display", "none");
 
      		$('#profile-eduardo').removeClass("profile-eduardo-open");
@@ -227,9 +217,9 @@ function open_eduardo_profile(){
      			$('#container-profile-paulo').css('display', 'none');
 
      			$('#profile-eduardo-description').css("display", "block");
-     			$('#profile-eduardo-description').addClass('animated flipInX').stop();
+     			$('#profile-eduardo-description').addClass('animated fadeIn').stop();
      			$('#profile-eduardo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-     				$(this).removeClass("animated flipInX");
+     				$(this).removeClass("animated fadeIn");
 
      			});
 
@@ -241,9 +231,9 @@ function open_eduardo_profile(){
 
 function open_paulo_profile(){
 	if($('#profile-paulo').hasClass('profile-paulo-open')){
-     	$('#profile-paulo-description').addClass('animated flipOutX').stop();
+     	$('#profile-paulo-description').addClass('animated fadeOut').stop();
      	$('#profile-paulo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-     		$(this).removeClass("animated flipOutX");
+     		$(this).removeClass("animated fadeOut");
      		$('#profile-paulo-description').css("display", "none");
 
      		$('#profile-paulo').removeClass("profile-paulo-open");
@@ -268,9 +258,9 @@ function open_paulo_profile(){
      			$('#container-profile-eduardo').css('display', 'none');
 
      			$('#profile-paulo-description').css("display", "block");
-     			$('#profile-paulo-description').addClass('animated flipInX').stop();
+     			$('#profile-paulo-description').addClass('animated fadeIn').stop();
      			$('#profile-paulo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-     				$(this).removeClass("animated flipInX");
+     				$(this).removeClass("animated fadeIn");
 
      			});
 
