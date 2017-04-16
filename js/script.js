@@ -199,8 +199,6 @@ $(document).ready(function() {
 });
 
 function open_eduardo_profile(){
-
-
 	if($('#profile-eduardo').hasClass('profile-eduardo-open')){
      	$('#profile-eduardo-description').addClass('animated flipOutX').stop();
      	$('#profile-eduardo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -215,8 +213,6 @@ function open_eduardo_profile(){
      		$('#profile-paulo').addClass('animated fadeIn').stop();
      		$('#profile-paulo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
      			$(this).removeClass("animated fadeIn");
-     			
-
      		});
 
      	});
@@ -240,16 +236,47 @@ function open_eduardo_profile(){
      		});
 
 	}
+}
 
 
-	
+function open_paulo_profile(){
+	if($('#profile-paulo').hasClass('profile-paulo-open')){
+     	$('#profile-paulo-description').addClass('animated flipOutX').stop();
+     	$('#profile-paulo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     		$(this).removeClass("animated flipOutX");
+     		$('#profile-paulo-description').css("display", "none");
 
+     		$('#profile-paulo').removeClass("profile-paulo-open");
+			$('#profile-paulo').addClass("profile-paulo-closed");
 
-	
+     		$('#container-profile-eduardo').css('display', 'block');
 
+     		$('#profile-eduardo').addClass('animated fadeIn').stop();
+     		$('#profile-eduardo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated fadeIn");
+     		});
 
-	
+     	});
 
+	}else{
+		$('#profile-paulo').removeClass("profile-paulo-closed");
+		$('#profile-paulo').addClass("profile-paulo-open");
+
+     		$('#profile-eduardo').addClass('animated fadeOut').stop();
+     		$('#profile-eduardo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated fadeOut");
+     			$('#container-profile-eduardo').css('display', 'none');
+
+     			$('#profile-paulo-description').css("display", "block");
+     			$('#profile-paulo-description').addClass('animated flipInX').stop();
+     			$('#profile-paulo-description').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     				$(this).removeClass("animated flipInX");
+
+     			});
+
+     		});
+
+	}
 }
 
 

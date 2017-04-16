@@ -191,6 +191,11 @@ body{
     right: 0;
 }
 
+.carousel-inner>.item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
 
 /*BLOCKS*/
@@ -610,14 +615,17 @@ textarea:focus ~ .highlight {
   margin-top: 50px;
 }
 
-#profile-paulo{
+.profile-paulo-closed{
   margin-left: inherit;
   transition: all 0.5s ease;
 }
-
-#profile-paulo:hover{
-  margin-left: 30%;
+.profile-paulo-open{
+  margin-left: 15%;
   transition: all 0.5s ease;
+}
+.profile-paulo-description-content{
+  margin-left: 20%;
+  text-align: center;
 }
 
 .profile-eduardo-closed{
@@ -626,12 +634,16 @@ textarea:focus ~ .highlight {
 }
 
 .profile-eduardo-open{
-  margin-right: 30%;
+  margin-right: 15%;
   transition: all 0.5s ease;
+}
+.profile-eduardo-description-content{
+  margin-right: 20%;
+  text-align: center;
 }
 
 .carousel-inner{
-  height: 500px;
+  height: 600px;
 }
 
 #about-description{
@@ -647,9 +659,52 @@ textarea:focus ~ .highlight {
 .carousel-indicators li {
     width: 20px;
     height: 20px;
+    border: 1px solid #000;
 }
 
 .carousel-indicators .active {
     width: 20px;
     height: 20px;
+    background-color: #000;
 }
+
+#about-principles{
+  height: inherit;
+  background-color: rgb(193, 145, 194);
+}
+
+.equation-img{
+  padding-top: 30px;
+}
+
+#about-principles h4, h1{
+  text-align: center;
+}
+#about-principles h4{
+  font-size: 22px;
+}
+
+.principles-content{
+  padding-top: 180px;
+}
+
+.profiles-content{
+  padding-top: 50px;
+}
+
+.about-content{
+  padding-top: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.about-content p + p{
+  margin-top: 30px;
+}
+
+.about-content h4{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
