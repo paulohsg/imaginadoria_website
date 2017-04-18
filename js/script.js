@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 	var waypoint = new Waypoint({
-	  element: document.getElementById('logovo-wrapper'),
+	  element: document.getElementById('logovo-text'),
 	  handler: function(direction) {
 	    if(direction == 'up'){
 	    	$('#logovo-navbar').addClass('animated flipOutX');

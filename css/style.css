@@ -43,6 +43,12 @@ body{
     z-index: 100;
 }
 
+#current-session-label{
+  width: initial;
+  padding-right: 20px;
+  float: right;
+}
+
 
 #nav-wrapper{
 	width: 100%
@@ -178,6 +184,11 @@ body{
 
 
 /*CAROUSEL*/
+
+#myCarousel{
+  margin-top: 15%;
+}
+
 .logovo-carousel-control-left{
 	position: absolute;
     top: 42%;
@@ -738,6 +749,7 @@ textarea:focus ~ .highlight {
 }
 
 .equation-img{
+  height: 100px;
   padding-top: 30px;
 }
 
