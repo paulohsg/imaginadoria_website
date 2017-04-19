@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('logovo-text'),
+      
 	  handler: function(direction) {
 	    if(direction == 'up'){
 	    	$('#logovo-navbar').addClass('animated flipOutX');
@@ -60,8 +61,34 @@ $(document).ready(function(){
      		$(this).removeClass("animated fadeOut");
      	});
     }
-  }
+  },
+  offset: 200
+
 });
+
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('myCarousel'),
+      
+      handler: function() {
+        $('#current-session-label').css('display', 'block');
+        $('#current-session-label span').text('PERFIL');
+
+      },
+      offset: 200
+
+  });
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('logovo-text'),
+      
+      handler: function() {
+        $('#current-session-label').css('display', 'none');
+
+      },
+      offset: 200
+
+  });
 
 
 
