@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('logovo-text'),
+      
 	  handler: function(direction) {
 	    if(direction == 'up'){
 	    	$('#logovo-navbar').addClass('animated flipOutX');
@@ -60,8 +61,167 @@ $(document).ready(function(){
      		$(this).removeClass("animated fadeOut");
      	});
     }
-  }
+  },
+  offset: 300
+
 });
+
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('myCarousel'),
+      
+      handler: function(direction) {
+        if(direction == 'up'){
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label').css('display', 'none');
+
+	     	});
+
+      	}else{
+      		$('#current-session-label').css('display', 'block');
+      		$('#current-session-label span').text('PERFIL');
+      		$('#current-session-label').addClass('animated flipInX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipInX");
+
+	     	});
+      	}
+
+      },
+      offset: 300
+
+  });
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('services'),
+
+      handler: function(direction) {
+
+      	if(direction == 'up'){
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('PERFIL');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+
+      	}else{
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('SERVIÇOS');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+      	}
+
+      },
+      offset: 300
+
+  });
+
+
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('portfolio'),
+
+      handler: function(direction) {
+
+      	if(direction == 'up'){
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('SERVICES');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+
+      	}else{
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('PORTFOLIO');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+      	}
+
+      },
+      offset: 300
+
+  });
+
+
+
+    var waypoint = new Waypoint({
+      element: document.getElementById('contact'),
+
+      handler: function(direction) {
+
+      	if(direction == 'up'){
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('PORTFOLIO');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+
+      	}else{
+      		$('#current-session-label').addClass('animated flipOutX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipOutX");
+
+	     		$('#current-session-label span').text('CONTATOS');
+
+	     		$('#current-session-label').addClass('animated flipInX').stop();
+	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     			$(this).removeClass("animated flipInX");
+
+	     		});
+
+	     	});
+      	}
+
+      },
+      offset: 200
+
+  });
+
 
 
 
@@ -269,4 +429,29 @@ function open_paulo_profile(){
 	}
 }
 
+/*
 
+$(window).bind("scroll", function() {
+
+    //clear all active class
+    if($('#myCarousel').is(':within-viewport') && ){
+    	$('#current-session-label').css('display', 'block');
+        $('#current-session-label span').text('PERFIL');
+
+        $('#current-session-label').addClass('animated flipInX').stop();
+     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+     			$(this).removeClass("animated flipInX");
+
+     		});
+
+    }else if($('#myElement').is(':within-viewport-left')){
+
+    }else if($('#myElement').is(':within-viewport-left')){
+
+    }else if($('#myElement').is(':within-viewport-left')){
+
+    }
+});
+
+
+*/

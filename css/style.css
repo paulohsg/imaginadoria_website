@@ -47,6 +47,12 @@ body{
   width: initial;
   padding-right: 20px;
   float: right;
+  font-weight: bolder;
+}
+
+#current-session-label span{
+  font-size: 20px;
+  color: #777;
 }
 
 
@@ -213,8 +219,11 @@ body{
 /*ACCORDION*/
 #services{
   margin-top: 15%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: initial;
+    padding-right: initial;
+}
+#services .row{
+  margin-right: 0px;
 }
 #accordion{
     margin-top: 30px;
@@ -276,7 +285,7 @@ body{
 }
 
 .img-accordion{
-  width: 80%;
+  width: 60%;
 }
 
 .accordion-collapse1{
@@ -316,7 +325,7 @@ body{
 #portfolio{
   padding-right: initial;
   padding-left: initial;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 
@@ -513,6 +522,7 @@ body{
 /*CONTACT*/
 #contact{
   margin-top: 15%;
+  margin-bottom: 10%;
 }
 
 
@@ -690,12 +700,17 @@ textarea:focus ~ .highlight {
   margin-top: 50px;
 }
 
+#profile-eduardo:hover,
+#profile-paulo:hover{
+  cursor: pointer;
+}
+
 .profile-paulo-closed{
-  margin-left: inherit;
+  margin-left: 10%;
   transition: all 0.5s ease;
 }
 .profile-paulo-open{
-  margin-left: 15%;
+  margin-left: 25%;
   transition: all 0.5s ease;
 }
 .profile-paulo-description-content{
@@ -704,12 +719,12 @@ textarea:focus ~ .highlight {
 }
 
 .profile-eduardo-closed{
-  margin-right: inherit;
+  margin-right: 10%;
   transition: all 0.5s ease;
 }
 
 .profile-eduardo-open{
-  margin-right: 15%;
+  margin-right: 25%;
   transition: all 0.5s ease;
 }
 .profile-eduardo-description-content{
@@ -788,6 +803,9 @@ textarea:focus ~ .highlight {
 
 .gray-client{
   background-color: rgb(230, 231, 233);
+}
+.client-item{
+  max-width: 75%;
 }
 
 
