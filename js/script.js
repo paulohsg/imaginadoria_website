@@ -120,7 +120,7 @@ $(document).ready(function(){
 	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 	     		$(this).removeClass("animated flipOutX");
 
-	     		$('#current-session-label span').text('SERVIÇOS');
+	     		$('#current-session-label span').text('SERVI?S');
 
 	     		$('#current-session-label').addClass('animated flipInX').stop();
 	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -216,6 +216,7 @@ $(document).ready(function(){
 
 	     	});
       	}
+      },
 
       handler: function() {
         $('#current-session-label').css('display', 'block');
