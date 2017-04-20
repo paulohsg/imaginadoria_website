@@ -69,7 +69,7 @@ $(document).ready(function(){
 
     var waypoint = new Waypoint({
       element: document.getElementById('myCarousel'),
-      
+
       handler: function(direction) {
         if(direction == 'up'){
       		$('#current-session-label').addClass('animated flipOutX').stop();
@@ -120,7 +120,7 @@ $(document).ready(function(){
 	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 	     		$(this).removeClass("animated flipOutX");
 
-	     		$('#current-session-label span').text('SERVIÃ‡OS');
+	     		$('#current-session-label span').text('SERVIÇOS');
 
 	     		$('#current-session-label').addClass('animated flipInX').stop();
 	     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -217,12 +217,14 @@ $(document).ready(function(){
 	     	});
       	}
 
+      handler: function() {
+        $('#current-session-label').css('display', 'block');
+        $('#current-session-label span').text('PERFIL');
+
       },
       offset: 200
 
   });
-
-
 
 
 	$('#img-logovo-navbar').on('click', function() {
