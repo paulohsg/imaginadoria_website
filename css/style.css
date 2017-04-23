@@ -14,6 +14,14 @@ body{
 }
 
 
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 30px;
+}
+
+
 /*MENU SUPERIOR*/
 
 #top-button{
@@ -25,7 +33,7 @@ body{
 }
 
 #logovo-list{
-      position: absolute;
+    position: absolute;
     left: 0px;
     top: 0px;
     margin: 0px auto;
@@ -175,18 +183,53 @@ body{
     box-shadow: none;
 }
 
+@media (max-width: 768px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
 
 
 
 /*LOGO*/
+#logovo-wrapper{
+  margin-top: 50px;
+}
+
 #logovo-wrapper h1{
   font-size: 42px;
   font-weight: bold;
-	
 }
-#logovo{
-	height: 70%;
+
+@media screen and (max-width: 768px) {
+  #logovo-wrapper h1{
+    font-size: 36px;
+  }
 }
+
+@media screen and (max-width: 540px) {
+  #logovo-wrapper h1{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #logovo-wrapper h1{
+    font-size: 18px;
+  }
+}
+
+
 
 
 /*CAROUSEL*/
@@ -215,6 +258,19 @@ body{
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-indicators {
+    bottom:-50px;
+  }
+  .carousel-inner {
+     margin-bottom:50px;
+  }
+  .right,
+  .left{
+    display: none;
+  }
+}
+
 
 /*ACCORDION*/
 #services{
@@ -240,6 +296,29 @@ body{
 #accordion-introduction h1{
   font-weight: bold
 }
+
+@media screen and (max-width: 425px) {
+  #accordion p{
+    text-align: center;
+    font-size: 16px;
+  }
+  #accordion p + p{
+    margin-top: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #accordion-introduction h1{
+    font-size: 26px;
+  }
+  #accordion-introduction h3{
+    font-size: 20px;
+  }
+}
+
+
 .panel-default > .panel-heading{
     text-align: center;
     background-image: none;
@@ -285,6 +364,7 @@ body{
 }
 
 .img-accordion{
+  margin-bottom: 30px;
   width: 60%;
 }
 
@@ -319,6 +399,13 @@ body{
 .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a:hover {
     -webkit-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
+}
+
+
+@media screen and (max-width: 425px) {
+  .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    font-size: 18px;
+  }
 }
 
 /*PORTFOLIO*/
@@ -429,6 +516,12 @@ body{
   float: left;
   line-height: 40px;
 }
+.sub-menu li:first-child a{
+  margin-top: 30px;
+}
+.sub-menu li a:hover {
+  text-decoration: none;
+}
 
 .oppenned .sub-menu {
   opacity: 1;
@@ -528,6 +621,10 @@ body{
 
 /*EMAIL FORM*/
 
+#logovo-contact-mobile{
+  display: none;
+}
+
 .logo-contact-area img{
   margin-top: 70px;
   margin-bottom: 50px;
@@ -536,6 +633,18 @@ body{
 .email-form{
   padding-right: 30px;
   border-right: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+    #logovo-contact-desktop{
+      display: none;
+    }
+    #logovo-contact-mobile{
+      display: block;
+    }
+    .email-form{
+      border: none;
+    }
 }
 
 .contact-area{
@@ -551,6 +660,20 @@ form,
 .social-media-area a{
   display: inline-block;
   margin-right: 20px;
+}
+
+@media (max-width: 425px){
+  .contact-area,
+  .social-media-area{
+    text-align: center;
+  }
+  .button-form{
+    float: none !important;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .group { 
@@ -731,9 +854,89 @@ textarea:focus ~ .highlight {
   margin-right: 20%;
   text-align: center;
 }
+.profile-eduardo-description-content h2,
+.profile-paulo-description-content h2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.profile-eduardo-description-content p,
+.profile-paulo-description-content p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+/*PROFILES MOBILE*/
+
+#profile-eduardo-mobile,
+#profile-paulo-mobile{
+  height: 200px;
+}
+
+.profiles-content-mobile{
+  margin-top: 40px;
+}
+
+#container-profile-paulo-mobile{
+      
+}
+
+#container-profile-eduardo-mobile{
+      margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#profile-eduardo-mobile:hover,
+#profile-paulo-mobile:hover{
+  cursor: pointer;
+}
+
+.profile-paulo-closed-mobile{
+  margin-top: 10%;
+  transition: all 0.5s ease;
+}
+.profile-paulo-open-mobile{
+  margin-top: 25%;
+  transition: all 0.5s ease;
+}
+.profile-paulo-description-content-mobile{
+  text-align: center;
+}
+
+.profile-eduardo-closed-mobile{
+  margin-bottom: 10%;
+  transition: all 0.5s ease;
+}
+
+.profile-eduardo-open-mobile{
+  margin-bottom: 25%;
+  transition: all 0.5s ease;
+}
+.profile-eduardo-description-content-mobile{
+  margin-bottom: 20%;
+  text-align: center;
+}
+.profile-eduardo-description-content-mobile h2,
+.profile-paulo-description-content-mobile h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-eduardo-description-content-mobile p,
+.profile-paulo-description-content-mobile p{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+
+
 
 .carousel-inner{
-  height: 600px;
+  height: 700px;
 }
 
 #about-description{
@@ -764,7 +967,6 @@ textarea:focus ~ .highlight {
 }
 
 .equation-img{
-  height: 100px;
   padding-top: 30px;
 }
 
@@ -772,21 +974,27 @@ textarea:focus ~ .highlight {
   text-align: center;
 }
 #about-principles h4{
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .principles-content{
-  padding-top: 180px;
+  padding-top: 20%;
+}
+
+@media (max-width: 425px){
+  .principles-content{
+    padding-top: 50%;
+  }
 }
 
 .profiles-content{
-  padding-top: 50px;
+  padding-top: 10%;
 }
 
 .about-content{
   padding-top: 50px;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .about-content p + p{
@@ -796,6 +1004,28 @@ textarea:focus ~ .highlight {
 .about-content h4{
   font-size: 20px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content{
+    padding-top: 50px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+  .about-content h4{
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #myCarousel h1{
+    font-size: 26px;
+  }
+  #about-principles h4{
+  font-size: 20px;
+}
 }
 
 

@@ -218,11 +218,6 @@ $(document).ready(function(){
       	}
       },
 
-      handler: function() {
-        $('#current-session-label').css('display', 'block');
-        $('#current-session-label span').text('PERFIL');
-
-      },
       offset: 200
 
   });
@@ -392,6 +387,47 @@ function open_eduardo_profile(){
 }
 
 
+function open_eduardo_profile_mobile(){
+  if($('#profile-eduardo-mobile').hasClass('profile-eduardo-open-mobile')){
+      $('#profile-eduardo-description-mobile').addClass('animated fadeOut').stop();
+      $('#profile-eduardo-description-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass("animated fadeOut");
+        $('#profile-eduardo-description-mobile').css("display", "none");
+
+        $('#profile-eduardo-mobile').removeClass("profile-eduardo-open");
+      $('#profile-eduardo-mobile').addClass("profile-eduardo-closed");
+
+        $('#container-profile-paulo-mobile').css('display', 'block');
+
+        $('#profile-paulo-mobile').addClass('animated fadeIn').stop();
+        $('#profile-paulo-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated fadeIn");
+        });
+
+      });
+
+  }else{
+    $('#profile-eduardo-mobile').removeClass("profile-eduardo-closed-mobile");
+    $('#profile-eduardo-mobile').addClass("profile-eduardo-open-mobile");
+
+        $('#profile-paulo-mobile').addClass('animated fadeOut').stop();
+        $('#profile-paulo-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated fadeOut");
+          $('#container-profile-paulo-mobile').css('display', 'none');
+
+          $('#profile-eduardo-description-mobile').css("display", "block");
+          $('#profile-eduardo-description-mobile').addClass('animated fadeIn').stop();
+          $('#profile-eduardo-description-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass("animated fadeIn");
+
+          });
+
+        });
+
+  }
+}
+
+
 function open_paulo_profile(){
 	if($('#profile-paulo').hasClass('profile-paulo-open')){
      	$('#profile-paulo-description').addClass('animated fadeOut').stop();
@@ -430,6 +466,48 @@ function open_paulo_profile(){
      		});
 
 	}
+}
+
+
+
+function open_paulo_profile_mobile(){
+  if($('#profile-paulo-mobile').hasClass('profile-paulo-open-mobile')){
+      $('#profile-paulo-description-mobile').addClass('animated fadeOut').stop();
+      $('#profile-paulo-description-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass("animated fadeOut");
+        $('#profile-paulo-description-mobile').css("display", "none");
+
+        $('#profile-paulo-mobile').removeClass("profile-paulo-open-mobile");
+      $('#profile-paulo-mobile').addClass("profile-paulo-closed-mobile");
+
+        $('#container-profile-eduardo-mobile').css('display', 'block');
+
+        $('#profile-eduardo-mobile').addClass('animated fadeIn').stop();
+        $('#profile-eduardo-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated fadeIn");
+        });
+
+      });
+
+  }else{
+    $('#profile-paulo-mobile').removeClass("profile-paulo-closed-mobile");
+    $('#profile-paulo-mobile').addClass("profile-paulo-open-mobile");
+
+        $('#profile-eduardo-mobile').addClass('animated fadeOut').stop();
+        $('#profile-eduardo-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated fadeOut");
+          $('#container-profile-eduardo-mobile').css('display', 'none');
+
+          $('#profile-paulo-description-mobile').css("display", "block");
+          $('#profile-paulo-description-mobile').addClass('animated fadeIn').stop();
+          $('#profile-paulo-description-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass("animated fadeIn");
+
+          });
+
+        });
+
+  }
 }
 
 /*
