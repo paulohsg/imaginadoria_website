@@ -239,11 +239,13 @@ $(document).ready(function(){
 		}
 
     $(document).delegate('body', 'click', function(event) {
+      if($('#img-logovo-navbar').attr('src') == "img/logovo_broken.png"){
             $('#img-logovo-navbar').fadeOut(300, function() {
               $(this).attr("src","img/logovo.png");
               $(this).fadeIn(300);
           });
-        })
+          }
+        });
 
 	});
 
