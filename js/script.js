@@ -62,7 +62,7 @@ $(document).ready(function(){
      	});
     }
   },
-  offset: 300
+  offset: 200
 
 });
 
@@ -81,17 +81,23 @@ $(document).ready(function(){
 	     	});
 
       	}else{
-      		$('#current-session-label').css('display', 'block');
-      		$('#current-session-label span').text('PERFIL');
-      		$('#current-session-label').addClass('animated flipInX').stop();
-	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-	     		$(this).removeClass("animated flipInX");
 
-	     	});
+          $('#logovo-navbar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+$('#current-session-label').css('display', 'block');
+          $('#current-session-label span').text('PERFIL');
+          $('#current-session-label').addClass('animated flipInX').stop();
+        $('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated flipInX");
+
+        });
+          });
+
+
+      		
       	}
 
       },
-      offset: 300
+      offset: 200
 
   });
 
@@ -132,7 +138,7 @@ $(document).ready(function(){
       	}
 
       },
-      offset: 300
+      offset: 200
 
   });
 
@@ -175,7 +181,7 @@ $(document).ready(function(){
       	}
 
       },
-      offset: 300
+      offset: 200
 
   });
 
@@ -217,7 +223,6 @@ $(document).ready(function(){
 	     	});
       	}
       },
-
       offset: 200
 
   });
