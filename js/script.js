@@ -238,6 +238,13 @@ $(document).ready(function(){
 		    });
 		}
 
+    $(document).delegate('body', 'click', function(event) {
+            $('#img-logovo-navbar').fadeOut(300, function() {
+              $(this).attr("src","img/logovo.png");
+              $(this).fadeIn(300);
+          });
+        })
+
 	});
 
 
@@ -342,7 +349,20 @@ $(document).ready(function() {
 		}
 
 
-	})
+	});
+
+  /*MODALS*/
+
+
+  $('#modal-paulo-link').animatedModal({
+    modalTarget:'animated-modal-paulo',
+    color: 'rgb(139, 204, 192)'
+  });
+
+  $('#modal-eduardo-link').animatedModal({
+    modalTarget:'animated-modal-eduardo',
+    color: 'rgb(139, 204, 192)'
+  });
 
 });
 

@@ -183,6 +183,26 @@ body{
     box-shadow: none;
 }
 
+
+
+
+#logovo-dropdown-menu li:first-child a{
+  margin-top: 10px;
+}
+
+#logovo-dropdown-menu li a:hover{
+  color: white;
+  background-color: black;
+}
+
+#logovo-dropdown-menu li a{
+  font-weight: bolder;
+  background-image: none;
+  padding-top: 15px;
+  height: 100%;
+  transition: all .3s ease;
+}
+
 @media (max-width: 768px) {
     .navbar-collapse.collapse {
         display: none !important;
@@ -207,6 +227,7 @@ body{
 }
 
 #logovo-wrapper h1{
+  color: black;
   font-size: 42px;
   font-weight: bold;
 }
@@ -229,13 +250,21 @@ body{
   }
 }
 
+@media screen and (max-width: 320px) {
+  #logovo-wrapper h1{
+    font-size: 16px;
+  }
+}
+
 
 
 
 /*CAROUSEL*/
 
 #myCarousel{
-  margin-top: 15%;
+  color: black;
+  margin-top: 7.5%;
+  padding-top: 7.5%;
 }
 
 .logovo-carousel-control-left{
@@ -274,9 +303,10 @@ body{
 
 /*ACCORDION*/
 #services{
-  margin-top: 15%;
-    padding-left: initial;
-    padding-right: initial;
+  margin-top: 7.5%;
+  padding-top: 7.5%;
+  padding-left: initial;
+  padding-right: initial;
 }
 #services .row{
   margin-right: 0px;
@@ -412,7 +442,8 @@ body{
 #portfolio{
   padding-right: initial;
   padding-left: initial;
-    margin-top: 15%;
+  margin-top: 7.5%;
+  padding-top: 7.5%;
 }
 
 
@@ -614,7 +645,8 @@ body{
 
 /*CONTACT*/
 #contact{
-  margin-top: 15%;
+  margin-top: 7.5%;
+  padding-top: 7.5%;
   margin-bottom: 10%;
 }
 
@@ -657,12 +689,18 @@ form,
     padding: 3em 2em 2em 2em;
 }
 
+
 .social-media-area a{
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
-@media (max-width: 425px){
+@media (max-width: 768px){
+  .email-form{
+    padding-right: 0px;
+  }
   .contact-area,
   .social-media-area{
     text-align: center;
@@ -818,6 +856,21 @@ textarea:focus ~ .highlight {
 }
 
 
+
+@media (max-width: 375px){
+  form,
+  .contact-area,
+  .social-media-area{
+      padding: 3em 0 2em 0;
+  }
+  .social-media-area a{
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+  }
+
+}
+
+
 /*ABOUT*/
 #about{
   margin-top: 50px;
@@ -870,6 +923,10 @@ textarea:focus ~ .highlight {
 
 /*PROFILES MOBILE*/
 
+.profiles-content-mobile{
+  display: none;
+}
+
 #profile-eduardo-mobile,
 #profile-paulo-mobile{
   height: 200px;
@@ -901,7 +958,9 @@ textarea:focus ~ .highlight {
   margin-top: 25%;
   transition: all 0.5s ease;
 }
+.profile-eduardo-description-content-mobile,
 .profile-paulo-description-content-mobile{
+  margin: 60px 20px 20px 20px;
   text-align: center;
 }
 
@@ -920,16 +979,30 @@ textarea:focus ~ .highlight {
 }
 .profile-eduardo-description-content-mobile h2,
 .profile-paulo-description-content-mobile h2{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .profile-eduardo-description-content-mobile p,
 .profile-paulo-description-content-mobile p{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 
+
+@media (max-width: 992px){
+  .profiles-content{
+    display: none;
+  }
+  .profiles-content-mobile{
+    display: block;
+  }
+}
+
+
+.button-modal{
+  margin-top: 50px;
+}
 
 
 
