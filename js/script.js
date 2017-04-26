@@ -222,6 +222,15 @@ $(document).ready(function(){
 
   });
 
+    $(document).delegate('body', 'click', function(event) {
+      if($('#img-logovo-navbar').attr('src') == "img/logovo_broken.png"){
+            $('#img-logovo-navbar').fadeOut(300, function() {
+              $(this).attr("src","img/logovo.png");
+              $(this).fadeIn(300);
+          });
+          }
+        });
+
 
 	$('#img-logovo-navbar').on('click', function() {
 
@@ -238,18 +247,9 @@ $(document).ready(function(){
 		    });
 		}
 
-    $(document).delegate('body', 'click', function(event) {
-      if($('#img-logovo-navbar').attr('src') == "img/logovo_broken.png"){
-            $('#img-logovo-navbar').fadeOut(300, function() {
-              $(this).attr("src","img/logovo.png");
-              $(this).fadeIn(300);
-          });
-          }
-        });
-
 	});
 
-
+/*
 	$('.dropdown').on('show.bs.dropdown', function(e){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(500);
 	});
@@ -258,7 +258,22 @@ $(document).ready(function(){
 	$('.dropdown').on('hide.bs.dropdown', function(e){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500);
 	});
+*/
 
+});
+
+
+jQuery(document).ready(function ($) {
+
+
+$('.dropdown').on('show.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+});
+
+// Add slideUp animation to dropdown
+$('.dropdown').on('hide.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+});
 
 });
 
@@ -531,30 +546,3 @@ function open_paulo_profile_mobile(){
 
   }
 }
-
-/*
-
-$(window).bind("scroll", function() {
-
-    //clear all active class
-    if($('#myCarousel').is(':within-viewport') && ){
-    	$('#current-session-label').css('display', 'block');
-        $('#current-session-label span').text('PERFIL');
-
-        $('#current-session-label').addClass('animated flipInX').stop();
-     		$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-     			$(this).removeClass("animated flipInX");
-
-     		});
-
-    }else if($('#myElement').is(':within-viewport-left')){
-
-    }else if($('#myElement').is(':within-viewport-left')){
-
-    }else if($('#myElement').is(':within-viewport-left')){
-
-    }
-});
-
-
-*/

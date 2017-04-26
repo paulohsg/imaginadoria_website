@@ -269,14 +269,14 @@ body{
 
 .logovo-carousel-control-left{
 	position: absolute;
-    top: 42%;
+    top: 50%;
     z-index: 5;
     display: inline-block;
     left: 0;
 }
 .logovo-carousel-control-right{
 	position: absolute;
-    top: 42%;
+    top: 50%;
     z-index: 5;
     display: inline-block;
     right: 0;
