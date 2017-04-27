@@ -15,6 +15,8 @@ $(document).ready(function(){
 			     	$('#logovo-list').css("display", "none");
 			     	$("#normal-list").css("display", "block");
 
+            Waypoint.refreshAll();
+
 			     	$('.toLeft').addClass('animated fadeIn').stop();
 			     	$('.toLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			     		$(this).removeClass('animated fadeIn');
@@ -32,6 +34,8 @@ $(document).ready(function(){
 		     			$(this).removeClass("animated flipOutX");
 		     			$('#top-button').css("display", "none");
 
+              Waypoint.refreshAll()
+
 		     		});
 
     }else{
@@ -41,6 +45,9 @@ $(document).ready(function(){
      		$(this).removeClass("animated fadeOut");
      		$('#normal-list').css("display", "none");
      		$('#logovo-list').css('display', 'block');
+
+        Waypoint.refreshAll()
+
      		$('#logovo-navbar').addClass('animated flipInX').stop();
      		$('#logovo-navbar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
      			$(this).removeClass("animated flipInX");
@@ -48,6 +55,9 @@ $(document).ready(function(){
      		});
 
      		$('#top-button').css("display", "block");
+
+        Waypoint.refreshAll()
+
      		$('#top-button').addClass('animated flipInX').stop();
      		$('#top-button').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
      			$(this).removeClass("animated flipInX");
@@ -78,28 +88,26 @@ $(document).ready(function(){
 
 	     		$('#current-session-label').css('display', 'none');
 
+          Waypoint.refreshAll()
+
 	     	});
 
       	}else{
+      		$('#current-session-label').css('display', 'block');
 
-          $('#logovo-navbar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-$('#current-session-label').css('display', 'block');
-          $('#current-session-label span').text('PERFIL');
-          $('#current-session-label').addClass('animated flipInX').stop();
-        $('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          $(this).removeClass("animated flipInX");
+      		$('#current-session-label span').text('PERFIL');
+      		$('#current-session-label').addClass('animated flipInX').stop();
+	     	$('#current-session-label').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	     		$(this).removeClass("animated flipInX");
 
-        });
-          });
-
-
-      		
+	     	});
       	}
 
       },
-      offset: 200
+      offset: '30%'
 
   });
+
 
     var waypoint = new Waypoint({
       element: document.getElementById('services'),
@@ -138,9 +146,11 @@ $('#current-session-label').css('display', 'block');
       	}
 
       },
-      offset: 200
+      offset: '30%'
+       //context: jQuery('#services')
 
   });
+
 
 
 
@@ -181,7 +191,7 @@ $('#current-session-label').css('display', 'block');
       	}
 
       },
-      offset: 200
+      offset: '30%'
 
   });
 
@@ -223,9 +233,12 @@ $('#current-session-label').css('display', 'block');
 	     	});
       	}
       },
-      offset: 200
+
+      offset: '30%'
 
   });
+
+
 
     $(document).delegate('body', 'click', function(event) {
       if($('#img-logovo-navbar').attr('src') == "img/logovo_broken.png"){
