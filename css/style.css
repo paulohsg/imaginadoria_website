@@ -1043,6 +1043,19 @@ textarea:focus ~ .highlight {
   padding-top: 30px;
 }
 
+#img-equation-mobile{
+  display: none;
+}
+
+@media (max-width: 425px){
+  .equation-img{
+    display: none;
+  }
+  #img-equation-mobile{
+    display: block;
+  }
+}
+
 #about-principles h4, h1{
   text-align: center;
 }
@@ -1089,6 +1102,17 @@ textarea:focus ~ .highlight {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #about-description{
+    padding-top: 20px;
+  }
+  .about-content{
+    padding-top: 20px;
+    margin-right: initial;
+    margin-left: initial;
   }
 }
 
