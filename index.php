@@ -7,12 +7,15 @@
 
 	<link rel="icon" type="image/png" href="img/lovo_favicon.ico"/>
 
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/animate.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="js/bootstrapValidator.js" charset="utf-8"></script>
 	<script src="js/jquery.visible.min.js" charset="utf-8"></script>
@@ -47,7 +50,7 @@
 			    	<span>
 			    		<ul class="sub-menu ">
 			    			<li>
-			    				<a href="#myCarousel" title="about">PERFIL</a>
+			    				<a href="#carousel-mobile" title="about">PERFIL</a>
 			    			</li>
 			    			<li>
 			    				<a href="#services" title="skills">SERVIÇOS</a>
@@ -237,21 +240,6 @@
 						</div>
 					</div>
 
-					<div class="profiles-content-mobile">
-						<div class="row">
-							<div id="container-profile-eduardo-mobile" class="col-md-6">
-								<a id="modal-eduardo-link" href="#animated-modal-eduardo">
-									<img class="center-block profile-eduardo-closed-mobile" id="profile-eduardo-mobile" src="img/avatar_eduardo.png" alt="">
-								</a>
-							</div>
-							<div id="container-profile-paulo-mobile" class="col-md-6">
-								<a id="modal-paulo-link" href="#animated-modal-paulo">
-									<img class="center-block profile-paulo-closed-mobile" id="profile-paulo-mobile" src="img/avatar_paulo.png" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
-
 
 				</div>
 			</div>
@@ -294,6 +282,104 @@
 
 	</div>
 
+
+
+
+
+
+
+<div id="carousel-mobile" class="slider single-item">
+					<div><div id="about-description" class="slide-carousel-mobile">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="img-responsive center-block equation-img" src="img/icon_services.png" alt="">
+							<img id="img-equation-mobile" class="img-responsive center-block" src="img/icon_services_mobile.png" width="200px" alt="">
+						</div>
+					</div>
+
+					<div class="about-content">
+						<div class="row">
+							<div class="col-md-6">
+								<p>
+									<h4>A IMAGINADORIA representa, o meio pelo qual nós, imaginadores, tornamos real aquilo que você imagina.</h4>
+								</p>
+								<p>
+									<h4>
+										Estamos atentos para ouvir o que você têm a dizer para, então, decifrar suas reais necessidades.
+									</h4>
+								</p>
+							</div>
+							<div class="col-md-6">
+								<p>
+									<h4>
+										Nos importamos com fatores pertinentes ao desenvolvimento dos projetos, como acessibilidade, segurança, usabilidade.
+									</h4>
+								</p>
+								<p>
+									<h4>
+										Temos o compromisso de desenvolver produtos e conteúdos para web que sejam planejados de modo cuidadoso e sejam personalizados tendo em conta o que você precisa.
+									</h4>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div></div>
+					<div><div id="about-profiles" class="slide-carousel-mobile">
+				<div class="container">
+
+					<div class="row">
+						<div class="container">
+							<div class="col-md-12">
+								<h1>OS IMAGINADORES</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="profiles-content-mobile">
+						<div class="row">
+							<div id="container-profile-eduardo-mobile" class="col-md-6">
+								<a id="modal-eduardo-link" href="#animated-modal-eduardo">
+									<img class="center-block profile-eduardo-closed-mobile" id="profile-eduardo-mobile" src="img/avatar_eduardo.png" alt="">
+								</a>
+							</div>
+							<div id="container-profile-paulo-mobile" class="col-md-6">
+								<a id="modal-paulo-link" href="#animated-modal-paulo">
+									<img class="center-block profile-paulo-closed-mobile" id="profile-paulo-mobile" src="img/avatar_paulo.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div></div>
+					<div><div id="about-principles" class="slide-carousel-mobile">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>PRINCÍPIOS + AÇÕES</h1>
+						</div>
+						<div class="principles-content">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>IMAGINAR nos motiva</h4>
+								</div>
+								<div class="col-md-12">
+									<h4>PROJETAR é a nossa prática</h4>
+								</div>
+								<div class="col-md-12">
+									<h4>REALIZAR nosso objetivo</h4>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div></div>
+				</div>
 
 	<!-- MODAL -->
 
@@ -600,6 +686,8 @@
 
 
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/animatedModal.min.js"></script>
 
 </body>

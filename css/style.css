@@ -681,9 +681,6 @@ body{
     #logovo-contact-mobile{
       display: block;
     }
-    .email-form{
-      border: none;
-    }
 }
 
 .contact-area{
@@ -704,8 +701,9 @@ form,
   margin-top: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
   .email-form{
+    border: none;
     padding-right: 0px;
   }
   .contact-area,
@@ -930,10 +928,6 @@ textarea:focus ~ .highlight {
 
 /*PROFILES MOBILE*/
 
-.profiles-content-mobile{
-  display: none;
-}
-
 #profile-eduardo-mobile,
 #profile-paulo-mobile{
   height: 200px;
@@ -997,16 +991,6 @@ textarea:focus ~ .highlight {
 }
 
 
-@media (max-width: 992px){
-  .profiles-content{
-    display: none;
-  }
-  .profiles-content-mobile{
-    display: block;
-  }
-}
-
-
 .button-modal{
   margin-top: 50px;
 }
@@ -1056,7 +1040,7 @@ textarea:focus ~ .highlight {
 
 @media (max-width: 425px){
   .equation-img{
-    display: none;
+    display: none !important;
   }
   #img-equation-mobile{
     display: block;
@@ -1155,13 +1139,45 @@ textarea:focus ~ .highlight {
 /*FOOTER*/
 
 .footer{
-      height: 60px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin-top: 50px;
-    /* background-color: white; */
+  height: 60px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  /* background-color: white; */
 
+}
+
+
+
+/*CAROUSEL MOBILE*/
+
+.single-item{
+  margin-top: 7.5%;
+  padding-top: 7.5%;
+  display: none;
+}
+
+.slide-carousel-mobile{
+  height: 700px;
+}
+
+.slick-list,
+.slick-track{
+  height: 700px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+}
+
+@media (max-width: 992px){
+  .single-item{
+    display: block;
+  }
+  #myCarousel{
+    display: none;
+  }
 }

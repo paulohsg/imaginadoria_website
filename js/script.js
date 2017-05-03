@@ -267,6 +267,14 @@ $(document).ready(function(){
 
 	});
 
+
+  /*CAROUSEL MOBILE*/
+  $('#carousel-mobile').slick({
+    infinite: false,
+    arrows: false,
+    dots:true,
+  });
+
 /*
 	$('.dropdown').on('show.bs.dropdown', function(e){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(500);
