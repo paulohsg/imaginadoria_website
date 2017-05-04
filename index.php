@@ -15,12 +15,13 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js" charset="utf-8"></script>
-	<script src="js/bootstrapValidator.js" charset="utf-8"></script>
 	<script src="js/jquery.visible.min.js" charset="utf-8"></script>
 	<script src="js/jquery.appear.js" charset="utf-8"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/validator.min.js" charset="utf-8"></script>
 	<script src="js/script.js" charset="utf-8"></script>
 </head>
 <body>
@@ -638,18 +639,21 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="email-form">
-					<form action="send-email.php" method="post" accept-charset="UTF-8">
-						<div class="group">
-							<input type="text" name="name-input"><span class="highlight"></span><span class="bar"></span>
+					<form id="contact-form" action="send-email.php" method="post" accept-charset="UTF-8" data-toggle="validator">
+						<div class="form-group">
+							<input type="text" id="iname" name="name-input" data-required-error="Por favor, insira um nome." required><span class="highlight"></span><span class="bar"></span>
 							<label>Nome</label>
+							<div class="help-block with-errors"></div>
 						</div>
-						<div class="group">
-							<input type="email" name="email-input"><span class="highlight"></span><span class="bar"></span>
+						<div class="form-group">
+							<input type="email" id="iemail" name="email-input" data-error="Por favor, informe um e-mail correto." required><span class="highlight"></span><span class="bar"></span>
 							<label>Email</label>
+							<div class="help-block with-errors"></div>
 						</div>
-						<div class="group">
-							<textarea type="text" name="message-input" rows="5"></textarea><span class="highlight"></span><span class="bar"></span>
+						<div class="form-group is-floating-label">
+							<textarea type="text" id="imessage" name="message-input" rows="5" data-error="Por favor, insira uma mensagem" required></textarea><span class="highlight"></span><span class="bar"></span>
 							<label>Mensagem</label>
+							<div class="help-block with-errors"></div>
 						</div>
 						<button type="submit" class="button-form">ENVIAR<span class="button-form-arrow">></span>
 							<div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
@@ -686,6 +690,7 @@
 
 
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/bootstrapValidator.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/animatedModal.min.js"></script>

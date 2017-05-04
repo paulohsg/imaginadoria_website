@@ -572,3 +572,4 @@ function open_paulo_profile_mobile(){
 
   }
 }
+
