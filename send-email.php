@@ -23,8 +23,8 @@ try {
  
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-     $mail->SetFrom($_POST['email-input'], $_POST['email-name']); //Seu e-mail
-     $mail->AddReplyTo($_POST['email-input'], $_POST['email-name']); //Seu e-mail
+     $mail->SetFrom($_POST['email-input'], $_POST['name-input']); //Seu e-mail
+     $mail->AddReplyTo($_POST['email-input'], $_POST['name-input']); //Seu e-mail
      $mail->Subject = 'Contato';//Assunto do e-mail
  
  

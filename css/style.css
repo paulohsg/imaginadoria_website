@@ -895,7 +895,7 @@ textarea:focus ~ .highlight {
   transition: all 0.5s ease;
 }
 .profile-paulo-description-content{
-  margin-left: 20%;
+  margin-left: 10%;
   text-align: center;
 }
 
@@ -909,7 +909,7 @@ textarea:focus ~ .highlight {
   transition: all 0.5s ease;
 }
 .profile-eduardo-description-content{
-  margin-right: 20%;
+  margin-right: 10%;
   text-align: center;
 }
 .profile-eduardo-description-content h2,
@@ -1104,6 +1104,9 @@ textarea:focus ~ .highlight {
     padding-top: 20px;
     margin-right: initial;
     margin-left: initial;
+  }
+  .about-content p + p{
+    margin-top: 15px;
   }
 }
 

@@ -576,3 +576,24 @@ function open_paulo_profile_mobile(){
   }
 }
 
+
+
+$(document).ready(function(){
+
+    $("#contact-form").ajaxForm({url: 'send-email.php',
+                            type: 'post',
+                            success: function(json)
+                                   {
+                                        var data = JSON.parse(json);
+                                       if( data.status == 'error' ) {
+                                            alert('Erro ao enviar mensagem. Por favor tente novamente mais tarde, ou nos contate diretamente pelo email info@imaginadoria.com.');
+                                            location.reload();
+                                        }else{
+                                            alert('Mensagem enviada com sucesso! Em breve retornaremos seu contato.');
+                                            location.reload();
+                                        }
+
+                                   }
+    });
+
+  });

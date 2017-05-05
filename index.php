@@ -15,8 +15,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/jquery.form.js" charset="utf-8"></script>
 	<script src="js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="js/jquery.visible.min.js" charset="utf-8"></script>
 	<script src="js/jquery.appear.js" charset="utf-8"></script>
@@ -190,7 +190,7 @@
 					<div class="profiles-content">
 						<div class="row">
 							<div id="container-profile-eduardo" class="col-md-6">
-								<img class="center-block profile-eduardo-closed" id="profile-eduardo" src="img/avatar_eduardo.png" height="300px" alt="" onclick="open_eduardo_profile()">
+								<img class="center-block profile-eduardo-closed" id="profile-eduardo" src="img/avatar_dudu.png" height="300px" alt="" onclick="open_eduardo_profile()">
 							</div>
 							<div id="profile-eduardo-description" class="col-md-6" style="display: none;">
 								<div class="profile-eduardo-description-content">
@@ -343,12 +343,12 @@
 						<div class="row">
 							<div id="container-profile-eduardo-mobile" class="col-md-6">
 								<a id="modal-eduardo-link" href="#animated-modal-eduardo">
-									<img class="center-block profile-eduardo-closed-mobile" id="profile-eduardo-mobile" src="img/avatar_eduardo.png" alt="">
+									<img class="center-block profile-eduardo-closed-mobile" id="profile-eduardo-mobile" src="img/avatar_dudu.png" alt="">
 								</a>
 							</div>
 							<div id="container-profile-paulo-mobile" class="col-md-6">
 								<a id="modal-paulo-link" href="#animated-modal-paulo">
-									<img class="center-block profile-paulo-closed-mobile" id="profile-paulo-mobile" src="img/avatar_paulo.png" alt="">
+									<img class="center-block profile-paulo-closed-mobile" id="profile-paulo-mobile" src="img/avatar_ph.png" alt="">
 								</a>
 							</div>
 						</div>
@@ -689,7 +689,7 @@
 
 
 
-	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	
 	<script src="js/bootstrapValidator.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
