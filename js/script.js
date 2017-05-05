@@ -241,9 +241,10 @@ $(document).ready(function(){
 
 
     $(document).delegate('body', 'click', function(event) {
-      if($('#img-logovo-navbar').attr('src') == "img/logovo_broken.png"){
+      if($('#img-logovo-navbar').attr('src') == "img/icon_menu.png"){
             $('#img-logovo-navbar').fadeOut(300, function() {
               $(this).attr("src","img/logovo.png");
+              $(this).width("65.59");
               $(this).fadeIn(300);
           });
           }
@@ -256,11 +257,13 @@ $(document).ready(function(){
 		if($(this).attr('src') == "img/logovo.png"){
 			$(this).fadeOut(300, function() {
 		        $(this).attr("src","img/icon_menu.png");
+            $(this).width("77.59");
 		        $(this).fadeIn(300);
 		    });
 		}else{
 			$(this).fadeOut(300, function() {
 		        $(this).attr("src","img/logovo.png");
+            $(this).width("65.59");
 		        $(this).fadeIn(300);
 		    });
 		}
@@ -573,24 +576,3 @@ function open_paulo_profile_mobile(){
   }
 }
 
-
-
-$(document).ready(function(){
-
-    $("#contact-form").ajaxForm({url: 'send-email.php',
-                            type: 'post',
-                            success: function(json)
-                                   {
-                                        var data = JSON.parse(json);
-                                       if( data.status == 'error' ) {
-                                            alert('Ocorreu um erro ao enviar sua mensagem. Por favor tente novamente mais tarde, ou entre em contato conocsco diretamente pelo email informado na área "CONTATOS".');
-                                            location.reload();
-                                        } else {
-                                            alert('Mensagem enviada com sucesso. Em breve retornaremos seu contato!');
-                                            location.reload();
-                                        }
-
-                                   }
-    });
-
-  });
