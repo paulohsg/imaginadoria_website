@@ -2,11 +2,12 @@
  
 // Inclui o arquivo class.phpmailer.php localizado na pasta class
 require_once("class/PHPMailerAutoload.php");
+$response = array();
  
 // Inicia a classe PHPMailer
 $mail = new PHPMailer(true);
 $mail->charset = "ISO-8859-1";
-$mail->SMTPDebug  = 1;
+//$mail->SMTPDebug  = 1;
  
 // Define os dados do servidor e tipo de conexão
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -45,10 +46,14 @@ try {
      //$mail->MsgHTML(file_get_contents('arquivo.html'));
  
      $mail->Send();
-     echo "Mensagem enviada com sucesso</p>\n";
+     $response['status'] = 'success';
  
     //caso apresente algum erro é apresentado abaixo com essa exceção.
     }catch (phpmailerException $e) {
-      echo $e->errorMessage(); //Mensagem de erro costumizada do PHPMailer
-}
+      //echo $e->errorMessage(); //Mensagem de erro costumizada do PHPMailer
+        $response['status'] = 'error';
+        $response['message'] = $e->errorMessage();
+    }
+
+    echo json_encode($response);
 ?>

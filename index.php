@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IMAGINADORIA</title>
 
-	<link rel="icon" type="image/png" href="img/lovo_favicon.ico"/>
+	<link rel="icon" type="image/png" href="img/favicon.ico"/>
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -236,7 +236,7 @@
 								</div>
 							</div>
 							<div id="container-profile-paulo" class="col-md-6">
-								<img class="center-block profile-paulo-closed" id="profile-paulo" src="img/avatar_paulo.png" height="300px" alt="" onclick="open_paulo_profile()">
+								<img class="center-block profile-paulo-closed" id="profile-paulo" src="img/avatar_ph.png" height="300px" alt="" onclick="open_paulo_profile()">
 							</div>
 						</div>
 					</div>
