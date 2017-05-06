@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 
     var waypoint = new Waypoint({
-      element: document.getElementById('myCarousel'),
+      element: document.getElementById('carousel-container'),
 
       handler: function(direction) {
         if(direction == 'up'){
@@ -244,7 +244,7 @@ $(document).ready(function(){
       if($('#img-logovo-navbar').attr('src') == "img/icon_menu.png"){
             $('#img-logovo-navbar').fadeOut(300, function() {
               $(this).attr("src","img/logovo.png");
-              $(this).width("65.59");
+              $(this).width("79.35");
               $(this).fadeIn(300);
           });
           }
@@ -257,13 +257,13 @@ $(document).ready(function(){
 		if($(this).attr('src') == "img/logovo.png"){
 			$(this).fadeOut(300, function() {
 		        $(this).attr("src","img/icon_menu.png");
-            $(this).width("77.59");
+            $(this).width("83.59");
 		        $(this).fadeIn(300);
 		    });
 		}else{
 			$(this).fadeOut(300, function() {
 		        $(this).attr("src","img/logovo.png");
-            $(this).width("65.59");
+            $(this).width("79.35");
 		        $(this).fadeIn(300);
 		    });
 		}

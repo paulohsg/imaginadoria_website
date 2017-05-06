@@ -5,7 +5,7 @@
 
 
 body{
-	padding-top: 90px;
+	padding-top: 70px;
     font-family: 'Gotham';
 }
 
@@ -41,6 +41,7 @@ body{
 }
 
 #logovo-dropdown-menu{
+  margin-top: 15px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -140,9 +141,9 @@ body{
 .dropdown-menu-center {
     right: auto;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+    -webkit-transform: translate(-46%, 0);
+    -o-transform: translate(-46%, 0);
+    transform: translate(-46%, 0);
     padding-top: 30px;
 }
 .dropdown-menu-center li{
@@ -229,8 +230,13 @@ body{
 
 
 /*LOGO*/
+#logovo{
+  width: 60%;
+}
+
+
 #logovo-wrapper{
-  margin-top: 50px;
+  margin-top: 10%;
 }
 
 #logovo-wrapper h1{
@@ -239,27 +245,33 @@ body{
   font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+  #logovo-wrapper h1{
+    font-size: 34px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #logovo-wrapper h1{
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #logovo-wrapper h1{
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  #logovo-wrapper h1{
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #logovo-wrapper h1{
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #logovo-wrapper h1{
+    font-size: 12px;
   }
 }
 
@@ -334,18 +346,6 @@ body{
   font-weight: bold
 }
 
-@media screen and (max-width: 425px) {
-  #accordion p{
-    text-align: center;
-    font-size: 16px;
-  }
-  #accordion p + p{
-    margin-top: 15px;
-  }
-}
-
-
-
 @media screen and (max-width: 768px) {
   #accordion-introduction h1{
     font-size: 26px;
@@ -354,6 +354,24 @@ body{
     font-size: 20px;
   }
 }
+
+
+@media screen and (max-width: 425px) {
+  #accordion p{
+    text-align: center;
+    font-size: 16px;
+  }
+  #accordion p + p{
+    margin-top: 15px;
+  }
+  #accordion-introduction h1{
+    font-size: 22px;
+  }
+  #accordion-introduction h3{
+    font-size: 18px;
+  }
+}
+
 
 
 .panel-default > .panel-heading{
@@ -683,6 +701,12 @@ body{
     }
 }
 
+@media screen and (max-width: 425px) {
+    #logovo-contact-mobile{
+      width: 60%;
+    }
+}
+
 .contact-area{
   padding: 3em 2em 2em 2em;
 }
@@ -701,7 +725,7 @@ form,
   margin-top: 20px;
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
   .email-form{
     border: none;
     padding-right: 0px;
@@ -772,6 +796,13 @@ textarea:focus ~ label, textarea:valid ~ label {
   transform: scale(.75); left: -2px;
   /* font-size: 14px; */
   color: black;
+}
+
+
+@media (max-width: 425px){
+  label{
+    font-size: 16px;
+  }
 }
 
 
@@ -1031,11 +1062,13 @@ textarea:focus ~ .highlight {
 }
 
 .equation-img{
-  padding-top: 30px;
+  width: 65%;
+  padding-top: 50px;
 }
 
 #img-equation-mobile{
   display: none;
+  width: 40%
 }
 
 @media (max-width: 425px){
@@ -1043,6 +1076,7 @@ textarea:focus ~ .highlight {
     display: none !important;
   }
   #img-equation-mobile{
+    padding-top: 7%;
     display: block;
   }
 }
@@ -1101,12 +1135,15 @@ textarea:focus ~ .highlight {
     padding-top: 20px;
   }
   .about-content{
-    padding-top: 20px;
+    padding-top: 15%;
     margin-right: initial;
     margin-left: initial;
   }
   .about-content p + p{
     margin-top: 15px;
+  }
+  .about-content h4{
+    font-size: 16px;
   }
 }
 
@@ -1136,6 +1173,18 @@ textarea:focus ~ .highlight {
 .client-item{
   max-width: 75%;
 }
+
+@media (max-width: 425px){
+  .client-item {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 60%;
+  }
+
+}
+
+
+
 
 
 

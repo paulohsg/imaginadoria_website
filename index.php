@@ -90,7 +90,7 @@
 				<ul id="logovo-list" class="nav navbar-nav navbar-center" style="visibility: visible; display: none;">
 					<li id="logovo-navbar" class="dropdown center-block">
 						<a id="link-button-logovo-navbar" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="">
-							<img id="img-logovo-navbar" src="img/logovo.png" height="80px" width="65.59" alt="">
+							<img id="img-logovo-navbar" src="img/logovo.png" height="96px" width="79.35px" alt="">
 						</a>
 						<ul id="logovo-dropdown-menu" class="dropdown-menu dropdown-menu-center">
 							<li><a href="#myCarousel" target="">PERFIL</a></li>
@@ -126,9 +126,10 @@
 
 
 
-	
+	<div id="carousel-container">
+		
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -285,11 +286,10 @@
 
 
 
+	<!-- CAROUSEL MOBILE -->
 
 
-
-
-<div id="carousel-mobile" class="slider single-item">
+	<div id="carousel-mobile" class="slider single-item">
 					<div><div id="about-description" class="slide-carousel-mobile">
 				<div class="container">
 					<div class="row">
@@ -381,6 +381,20 @@
 				</div>
 			</div></div>
 				</div>
+
+
+
+	</div>
+
+	
+
+
+
+
+
+
+
+
 
 	<!-- MODAL -->
 
@@ -629,7 +643,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="logo-contact-area">
-					<img id="logovo-contact-desktop" class="img-responsive center-block" src="img/lovotipo_imaginadoria.png" width="400px" alt="">
+					<img id="logovo-contact-desktop" class="img-responsive center-block" src="img/lovotipo_imaginadoria.png" width="300px" alt="">
 					<img id="logovo-contact-mobile" class="img-responsive center-block" src="img/lovo_imaginadoria_vertical_m.png" width="400px" alt="">
 				</div>
 			</div>
