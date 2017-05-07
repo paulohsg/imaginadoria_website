@@ -579,7 +579,7 @@ function open_paulo_profile_mobile(){
 
 
 $(document).ready(function(){
-
+/*
     $("#contact-form").ajaxForm({url: 'send-email.php',
                             type: 'post',
                             success: function(json)
@@ -596,4 +596,65 @@ $(document).ready(function(){
                                    }
     });
 
-  });
+*/
+
+    $('#contact-form').on('submit', function(e) {
+
+      // Prevent default browser form submission with page reload
+      e.preventDefault();
+
+      $('#email-form').addClass('animated fadeOut').stop();
+          $('#email-form').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass("animated fadeOut");
+            $(this).css('display', 'none');
+            $('#send-email-waiting').css('display', 'block');
+
+            $('#send-email-waiting').addClass('animated fadeIn').stop();
+            $('#send-email-waiting').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("animated fadeIn");
+
+            });
+
+      });
+
+
+      // Make POST request with form parameters
+      $.post(this.action, $(this).serialize()).done(function(response) {
+
+          var data = JSON.parse(response);
+
+
+          $('#send-email-waiting').addClass('animated fadeOut').stop();
+          $('#send-email-waiting').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+             $(this).removeClass("animated fadeOut");
+             $(this).css('display', 'none');
+
+             if(data.status == 'success'){
+
+              $('#send-email-success').css('display', 'block')
+              $('#send-email-success').addClass('animated fadeIn').stop();
+              $('#send-email-success').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                 $(this).removeClass("animated fadeIn");
+               });
+
+             }else{
+              $('#send-email-error').css('display', 'block')
+              $('#send-email-error').addClass('animated fadeIn').stop();
+              $('#send-email-error').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                 $(this).removeClass("animated fadeIn");
+               });
+
+             }
+
+          });
+
+          // Do something with responce
+          
+          console.log(data.status == 'success');
+      });
+  })
+
+
+
+
+});

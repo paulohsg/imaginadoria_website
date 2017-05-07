@@ -160,6 +160,7 @@ body{
 	z-index: 1001;
 }
 #logovo-navbar{
+  padding-top: 10px;
 	width: 100px;
 }
 
@@ -912,6 +913,10 @@ textarea:focus ~ .highlight {
   margin-top: 50px;
 }
 
+.profile-titulacao{
+  font-size: 13px !important;
+}
+
 #profile-eduardo:hover,
 #profile-paulo:hover{
   cursor: pointer;
@@ -926,7 +931,6 @@ textarea:focus ~ .highlight {
   transition: all 0.5s ease;
 }
 .profile-paulo-description-content{
-  margin-left: 10%;
   text-align: center;
 }
 
@@ -940,7 +944,6 @@ textarea:focus ~ .highlight {
   transition: all 0.5s ease;
 }
 .profile-eduardo-description-content{
-  margin-right: 10%;
   text-align: center;
 }
 .profile-eduardo-description-content h2,
@@ -1039,9 +1042,14 @@ textarea:focus ~ .highlight {
   background-color: rgb(255, 222, 78);
 }
 
-#about-profiles{
+.about-profiles{
   height: inherit;
   background-color: rgb(139, 204, 192);
+}
+
+#about-profiles .col-md-6{
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .carousel-indicators li {
@@ -1171,7 +1179,9 @@ textarea:focus ~ .highlight {
   background-color: rgb(230, 231, 233);
 }
 .client-item{
-  max-width: 75%;
+}
+.client-item-container{
+  height: 200px;
 }
 
 @media (max-width: 425px){

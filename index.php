@@ -178,7 +178,7 @@
 				</div>
 			</div>
 
-			<div id="about-profiles" class="item">
+			<div id="about-profiles" class="item about-profiles">
 				<div class="container">
 
 					<div class="row">
@@ -200,7 +200,7 @@
 											Eduardo de Ávila
 										</h2>
 									</p>
-									<p>
+									<p class="profile-titulacao">
 										Mestre em Arte e Cultura Visual e graduado em Design Gráfico pela Universidade Federal de Goiás.
 									</p>
 									<p>
@@ -222,11 +222,11 @@
 											Paulo Henrique de Souza
 										</h2>
 									</p>
-									<p>
+									<p class="profile-titulacao">
 										Bacharel em Engenharia de Software pela Universidade Federal de Goiás.
 									</p>
 									<p>
-										Minha atuação inicial foi numa empresa no desenvolvimento de software para avaliações físicas.
+										Minha atuação inicial foi no desenvolvimento de softwares (web e desktop) para a área da saúde.
 									</p>
 									<p>
 										Em minhas experiências pessoal, acadêmica e profissional, estou em constante contato com várias tecnologias, estando apto tanto para o desenvolvimento de software desktop, quanto para o desenvolvimento web e mobile.
@@ -328,7 +328,7 @@
 
 				</div>
 			</div></div>
-					<div><div id="about-profiles" class="slide-carousel-mobile">
+					<div><div id="" class="slide-carousel-mobile about-profiles">
 				<div class="container">
 
 					<div class="row">
@@ -386,14 +386,6 @@
 
 	</div>
 
-	
-
-
-
-
-
-
-
 
 
 	<!-- MODAL -->
@@ -417,7 +409,7 @@
 						Bacharel em Engenharia de Software pela Universidade Federal de Goiás.
 					</p>
 					<p>
-						Minha atuação inicial foi numa empresa no desenvolvimento de software para avaliações físicas.
+						Minha atuação inicial foi no desenvolvimento de softwares (web e desktop) para a área da saúde.
 					</p>
 					<p>
 						Em minhas experiências pessoal, acadêmica e profissional, estou em constante contato com várias tecnologias, estando apto tanto para o desenvolvimento de software desktop, quanto para o desenvolvimento web e mobile.
@@ -605,33 +597,33 @@
 
 	<div id="portfolio" class="container-fluid">
 		<div class="col-md-4 col-sm-6 gray-client">
-			<div id="client-chuiquilin">
-				<img class="img-responsive center-block client-item" src="img/portfolio_1.svg" height="33%" alt="">
+			<div id="client-chuiquilin" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio1.png" alt="">
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
-			<div id="client-catherine">
-				<img class="img-responsive center-block client-item" src="img/portfolio_2.svg" height="33%" alt="">
+			<div id="client-catherine" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio2.png" alt="">
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6 gray-client">
-			<div id="client-dock">
-				<img class="img-responsive center-block client-item" src="img/portfolio_3.svg" height="33%" alt="">
+			<div id="client-dock" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio3.png" alt="">
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
-			<div id="client-unati">
-				<img class="img-responsive center-block client-item" src="img/portfolio_4.svg" height="33%" alt="">
+			<div id="client-unati" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio4.png" alt="">
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6 gray-client">
-			<div id="client-leicouto">
-				<img class="img-responsive center-block client-item" src="img/portfolio_5.svg" height="33%" alt="">
+			<div id="client-leicouto" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio5.png" alt="">
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
-			<div id="client-enges">
-				<img class="img-responsive center-block client-item" src="img/portfolio_6.svg" height="33%" alt="">
+			<div id="client-enges" class="client-item-container">
+				<img class="img-responsive center-block client-item" src="img/portfolio6.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -652,7 +644,7 @@
 
 		<div class="row">
 			<div class="col-md-6">
-				<div class="email-form">
+				<div id="email-form" class="email-form">
 					<form id="contact-form" action="send-email.php" method="post" accept-charset="UTF-8" data-toggle="validator">
 						<div class="form-group">
 							<input type="text" id="iname" name="name-input" data-required-error="Por favor, insira um nome." required><span class="highlight"></span><span class="bar"></span>
@@ -673,6 +665,23 @@
 							<div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
 						</button>
 					</form>
+				</div>
+
+
+				<div id="send-email-waiting" style="display: none;">
+					<div class="">
+						<h1>ENVIANDO</h1>
+					</div>
+				</div>
+				<div id="send-email-success" style="display: none;">
+					<div class="">
+						<h1>ENVIADO COM SUCESSO!</h1>
+					</div>
+				</div>
+				<div id="send-email-error" style="display: none;">
+					<div class="">
+						<h1>FALHA AO ENVIAR!</h1>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6">
