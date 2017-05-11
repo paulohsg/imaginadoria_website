@@ -647,10 +647,6 @@ $(document).ready(function(){
              }
 
           });
-
-          // Do something with responce
-          
-          console.log(data.status == 'success');
       });
   })
 
