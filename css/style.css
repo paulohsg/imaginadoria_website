@@ -486,12 +486,27 @@ body{
   }
 }
 
+@media screen and (max-width: 320px) {
+  .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    font-size: 15px;
+  }
+}
+
 
 /*RESPONSIVE-MENU*/
+
+#top-button-mobile{
+  padding-top: 10px;
+  display: none;
+  visibility: hidden;
+}
 
 @media screen and (max-width: 768px) {
     .responsive-navbar-button{
       display: block !important;
+    }
+    #top-button-mobile{
+      display: block;
     }
 }
 
@@ -957,7 +972,7 @@ textarea:focus ~ .highlight {
 }
 .profile-eduardo-description-content h2,
 .profile-paulo-description-content h2{
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -1023,15 +1038,57 @@ textarea:focus ~ .highlight {
 }
 .profile-eduardo-description-content-mobile h2,
 .profile-paulo-description-content-mobile h2{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+}
+
+.profile-titulacao-mobile{
+  font-size: 17px !important;
 }
 
 .profile-eduardo-description-content-mobile p,
 .profile-paulo-description-content-mobile p{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
 }
+
+@media (max-width: 425px){
+  .profile-eduardo-description-content-mobile h2,
+  .profile-paulo-description-content-mobile h2{
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .profile-titulacao-mobile{
+    font-size: 15px !important;
+  }
+
+  .profile-eduardo-description-content-mobile p,
+  .profile-paulo-description-content-mobile p{
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 320px){
+  .profile-eduardo-description-content-mobile h2,
+  .profile-paulo-description-content-mobile h2{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .profile-titulacao-mobile{
+    font-size: 13px !important;
+  }
+
+  .profile-eduardo-description-content-mobile p,
+  .profile-paulo-description-content-mobile p{
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+
 
 
 .button-modal{
@@ -1136,14 +1193,14 @@ textarea:focus ~ .highlight {
 
 @media screen and (max-width: 768px) {
   .about-content{
-    padding-top: 50px;
+    padding-top: 70px;
     margin-right: initial;
     margin-left: initial;
   }
   .about-content h4{
     text-align: center;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -1259,6 +1316,27 @@ textarea:focus ~ .highlight {
       height:auto;
       max-height:70%;
       max-width:80%;
+  }
+
+}
+
+
+@media (max-width: 375px){
+  .content .rs{
+      width:auto;
+      height:auto;
+      max-height:60%;
+      max-width:70%;
+  }
+
+}
+
+@media (max-width: 320px){
+  .content .rs{
+      width:auto;
+      height:auto;
+      max-height:50%;
+      max-width:60%;
   }
 
 }

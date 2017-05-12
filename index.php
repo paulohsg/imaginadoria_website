@@ -38,12 +38,12 @@
 			        </a>
 			    
 
-			    
-						<a href="#" title="about" id="button-top-mobile" class="navbar-brand logo-hidden">
+			    -->
+						<a href="#" title="about" id="top-button-mobile" class="navbar-brand logo-hidden">
 							<img src="img/seta_menu_2.png" height="50px" width="50px" alt="">
 						</a>
 
-					-->
+					
 					
 
 					<div  class="responsive-navbar-button">
@@ -405,7 +405,7 @@
 								Paulo Henrique de Souza
 							</h2>
 						</p>
-						<p>
+						<p class="profile-titulacao-mobile">
 							Bacharel em Engenharia de Software pela Universidade Federal de Goiás.
 						</p>
 						<p>
@@ -437,7 +437,7 @@
 								Eduardo de Ávila
 							</h2>
 						</p>
-						<p>
+						<p class="profile-titulacao-mobile">
 							Mestre em Arte e Cultura Visual e graduado em Design Gráfico pela Universidade Federal de Goiás.
 						</p>
 						<p>
@@ -641,11 +641,13 @@
 
 	<div class="col-md-4 col-sm-6 gray-client hover-bg">
 
-
-		<div class="hover-text">
+		<a href="">
+			<div class="hover-text">
 			<h5>Logo Design</h5>
 			<p class="lead">Client Seal</p>
 		</div>
+		</a>
+		
 
 
 		<div class="square">

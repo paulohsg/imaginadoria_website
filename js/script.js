@@ -2,6 +2,34 @@
 
 $(document).ready(function(){
 
+/*BOTAO TOPO MOBILE*/
+  var waypoint = new Waypoint({
+    element: document.getElementById('logovo-text'),
+      
+    handler: function(direction) {
+      if(direction == 'up'){
+
+        $('#top-button-mobile').addClass('animated flipOutX').stop();
+            $('#top-button-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("animated flipOutX");
+              $('#top-button-mobile').css("visibility", "hidden");
+
+            });
+
+    }else{
+
+        $('#top-button-mobile').css("visibility", "visible");
+
+        $('#top-button-mobile').addClass('animated flipInX').stop();
+        $('#top-button-mobile').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass("animated flipInX");
+
+        });
+    }
+  }
+
+});
+
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('logovo-text'),
