@@ -41,7 +41,8 @@ body{
 }
 
 #logovo-dropdown-menu{
-  margin-top: 15px;
+  margin-top: inherit;
+  padding-top: 35px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1564,4 +1565,26 @@ figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+
+/*SEND EMAIL ANIMATION*/
+.image-animation img{
+  position: absolute;
+ left:0;
+  right:0;
+  margin:0 auto;
+  max-height:300px;
+}
+
+#send-email-waiting{
+      margin-top: 300px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#send-email-success{
+  margin-top: 100px;
 }

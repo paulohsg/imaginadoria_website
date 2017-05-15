@@ -632,10 +632,66 @@ $(document).ready(function(){
       e.preventDefault();
 
       $('#email-form').addClass('animated fadeOut').stop();
-          $('#email-form').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $('#email-form').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass("animated fadeOut");
             $(this).css('display', 'none');
-            $('#send-email-waiting').css('display', 'block');
+            $('#send-email-animation').css('display', 'block');
+
+            $('#image-animation-1').css('display', 'block');
+            $('#image-animation-1').addClass('animated fadeIn').stop();
+            $('#image-animation-1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(this).removeClass("animated fadeIn");
+
+              $('#image-animation-2').css('display', 'block');
+              $('#image-animation-2').addClass('animated fadeIn').stop();
+              $('#image-animation-2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass("animated fadeIn");
+
+                $('#image-animation-3').css('display', 'block');
+                $('#image-animation-3').addClass('animated fadeIn').stop();
+                $('#image-animation-3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                  $(this).removeClass("animated fadeIn");
+
+                  $('#image-animation-4').css('display', 'block');
+                  $('#image-animation-4').addClass('animated fadeIn').stop();
+                  $('#image-animation-4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $(this).removeClass("animated fadeIn");
+
+                    $('#image-animation-5').css('display', 'block');
+                    $('#image-animation-5').addClass('animated fadeIn').stop();
+                    $('#image-animation-5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                      $(this).removeClass("animated fadeIn");
+
+                      $('#image-animation-6').css('display', 'block');
+                      $('#image-animation-6').addClass('animated fadeIn').stop();
+                      $('#image-animation-6').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                        $(this).removeClass("animated fadeIn");
+
+                        $('#image-animation-7').css('display', 'block');
+                        $('#image-animation-7').addClass('animated fadeIn').stop();
+                        $('#image-animation-7').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                          $(this).removeClass("animated fadeIn");
+
+                          $('#image-animation-8').css('display', 'block');
+                          $('#image-animation-8').addClass('animated fadeIn').stop();
+                          $('#image-animation-8').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                            $(this).removeClass("animated fadeIn");
+
+                          });
+
+                        });
+
+                      });
+
+                    });
+
+                  });
+
+                });
+
+              });
+
+            });
 
             $('#send-email-waiting').addClass('animated fadeIn').stop();
             $('#send-email-waiting').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -652,8 +708,8 @@ $(document).ready(function(){
           var data = JSON.parse(response);
 
 
-          $('#send-email-waiting').addClass('animated fadeOut').stop();
-          $('#send-email-waiting').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $('#send-email-animation').addClass('animated fadeOut').stop();
+          $('#send-email-animation').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
              $(this).removeClass("animated fadeOut");
              $(this).css('display', 'none');
 

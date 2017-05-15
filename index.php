@@ -801,20 +801,32 @@
 			</div>
 
 
-			<div id="send-email-waiting" style="display: none;">
-				<div class="">
-					<h1>ENVIANDO</h1>
-				</div>
-			</div>
 			<div id="send-email-success" style="display: none;">
 				<div class="">
-					<h1>ENVIADO COM SUCESSO!</h1>
+					<h1>MENSAGEM ENVIADA COM SUCESSO!</h1>
 				</div>
 			</div>
 			<div id="send-email-error" style="display: none;">
 				<div class="">
-					<h1>FALHA AO ENVIAR!</h1>
+					<h1>FALHA AO ENVIAR MENSAGEM!</h1>
 				</div>
+			</div>
+			<div id="send-email-animation" style="display: none;">
+				<div class="image-animation">
+					<img id="image-animation-1" class="center-block" src="img/wait_icon_1.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-2" class="center-block" src="img/wait_icon_2.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-3" class="center-block" src="img/wait_icon_3.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-4" class="center-block" src="img/wait_icon_4.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-5" class="center-block" src="img/wait_icon_5.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-6" class="center-block" src="img/wait_icon_6.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-7" class="center-block" src="img/wait_icon_7.png" height="300" width="300" alt="" style="display: none;">
+					<img id="image-animation-8" class="center-block" src="img/wait_icon_8.png" height="300" width="300" alt="" style="display: none;">
+				</div>
+				<div id="send-email-waiting">
+				<div class="">
+					<h1>ENVIANDO</h1>
+				</div>
+			</div>
 			</div>
 		</div>
 		<div class="col-md-6">
