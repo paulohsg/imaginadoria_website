@@ -701,6 +701,18 @@ body{
   margin-bottom: 10%;
 }
 
+.contact-area-email img,
+.contact-area-phone img{
+  float: left;
+  padding-right: 10px;
+}
+
+.contact-area-email h4{
+  padding-top: 8px;
+}
+
+
+
 
 /*EMAIL FORM*/
 
@@ -737,10 +749,18 @@ body{
   padding: 3em 2em 2em 2em;
 }
 
+.contact-area-message{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 form,
-.contact-area,
-.social-media-area {
+.contact-area{
     padding: 3em 2em 2em 2em;
+}
+
+.social-media-area {
+    padding: 1em 2em 2em 1em;
 }
 
 
@@ -757,8 +777,13 @@ form,
     padding-right: 0px;
   }
   .contact-area,
-  .social-media-area{
+  .social-media-area,
+  .contact-area-message{
     text-align: center;
+  }
+  .contact-area-email img,
+  .contact-area-phone img{
+    float: none;
   }
   .button-form{
     float: none !important;
@@ -1353,7 +1378,7 @@ textarea:focus ~ .highlight {
   text-align: center;
   margin: 0 auto;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.86);
   padding: 30% 0;
   height: 100%;
   width: 100%;

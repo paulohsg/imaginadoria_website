@@ -1060,10 +1060,24 @@
 		<div class="col-md-6">
 			<div class="contacts">
 
+				<div class="contact-area-message">
+					<h4>O que você imagina? Conte-nos!</h4>
+				</div>
+
 				<div class="contact-area">
-					<h4>info@imaginadoria.com</h4><br>
-					<h4>+55 (62) 9 8114-7969</h4>
-					<h4>+55 (62) 9 8131-1532</h4><br><br>
+					<div class="contact-area-email">
+						<img src="img/icon_email.png" width="40">
+						<h4>info@imaginadoria.com</h4><br>
+					</div>
+
+					<div class="contact-area-phone">
+						<img src="img/icon_phone.png" width="40">
+
+						<h4>+55 (62) 9 8114-7969</h4>
+						<h4>+55 (62) 9 8131-1532</h4><br><br>
+					</div>
+					
+					
 				</div>
 				<div class="social-media-area">
 					<a class="icon-social-media" href="" target="blank"><img src="img/icon_facebook.png" height="60" alt=""></a>
