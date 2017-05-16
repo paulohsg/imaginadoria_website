@@ -438,6 +438,9 @@ $(document).ready(function() {
     color: 'rgb(139, 204, 192)'
   });
 
+
+  
+
 });
 
 function open_eduardo_profile(){
@@ -736,5 +739,34 @@ $(document).ready(function(){
 
 
 
+  $('#modal-portfolio-1').animatedModal({
+    modalTarget:'animatedModal1',
+    color: '#fff'
+  });
+
+  $('#modal-portfolio-2').animatedModal({
+    modalTarget:'animatedModal2',
+    color: '#fff'
+  });
+
+  $('#modal-portfolio-3').animatedModal({
+    modalTarget:'animatedModal3',
+    color: '#fff'
+  });
+
+  $('#modal-portfolio-4').animatedModal({
+    modalTarget:'animatedModal4',
+    color: '#fff'
+  });
+
+  $('#modal-portfolio-5').animatedModal({
+    modalTarget:'animatedModal5',
+    color: '#fff'
+  });
+
+  $('#modal-portfolio-6').animatedModal({
+    modalTarget:'animatedModal6',
+    color: '#fff'
+  });
 
 });
