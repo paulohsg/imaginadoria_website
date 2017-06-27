@@ -215,6 +215,9 @@ body{
 }
 
 @media (max-width: 768px) {
+    #nav{
+      height: initial;
+    }
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -246,6 +249,12 @@ body{
   color: black;
   font-size: 42px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  #logovo-wrapper h1{
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -480,6 +489,11 @@ body{
     transition: all 0.4s ease-in-out 0s;
 }
 
+@media screen and (max-width: 500px) {
+  .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 425px) {
   .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
@@ -487,9 +501,21 @@ body{
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    font-size: 13px;
   }
 }
 
@@ -528,8 +554,8 @@ body{
   display: block;
   float: left;
   clear: both;
-  height: 6px;
-  width: 40px;
+  height: 4px;
+  width: 30px;
   border-radius: 40px;
   background-color: black;
   position: absolute;
@@ -544,10 +570,10 @@ body{
   z-index: 9;
 }
 .responsive-navbar-button span:nth-child(2) {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .responsive-navbar-button span:nth-child(3) {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .sub-menu {
@@ -599,7 +625,7 @@ body{
   line-height: 40px;
 }
 .sub-menu li:first-child a{
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .sub-menu li a:hover {
   text-decoration: none;
@@ -619,6 +645,7 @@ body{
           transform: rotate(45deg);
 }
 .oppenned span:nth-child(1) {
+  margin-top: initial;
   -webkit-transform: rotate(45deg) translateY(12px) translateX(12px);
           transform: rotate(45deg) translateY(12px) translateX(12px);
 }
@@ -1422,12 +1449,12 @@ textarea:focus ~ .highlight {
   margin: 0 auto
 }
 
+@media (max-width: 425px){
+  .hover-bg .hover-text {
+    padding: 27% 0;
+  }
 
-
-
-
-
-
+}
 
 
 /*FOOTER*/
@@ -1475,6 +1502,27 @@ textarea:focus ~ .highlight {
     display: none;
   }
 }
+
+
+@media (max-width: 425px){
+  .carousel-mobile-title h1{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 375px){
+  .carousel-mobile-title h1{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 320px){
+  .carousel-mobile-title h1{
+    font-size: 22px;
+  }
+}
+
+
 
 
 
@@ -1603,15 +1651,31 @@ figure.effect-bubba:hover p {
 }
 
 #send-email-waiting{
-      margin-top: 300px;
+      margin-top: 25%;
+      margin-bottom: 25%;
     text-align: center;
-    position: absolute;
     left: 0;
     right: 0;
 }
 
+#sending-email-label {
+  animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+}
+
+
+
+
 #send-email-success{
-  margin-top: 100px;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+#send-email-error{
+  margin-top: 25%;
+  margin-bottom: 25%;
 }
 
 

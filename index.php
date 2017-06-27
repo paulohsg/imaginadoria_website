@@ -39,7 +39,7 @@
 
 			    -->
 			    <a href="#" title="about" id="top-button-mobile" class="navbar-brand logo-hidden">
-			    	<img src="img/seta_menu_2.png" height="50px" width="50px" alt="">
+			    	<img src="img/seta_menu_2.png" height="33px" width="33px" alt="">
 			    </a>
 
 
@@ -331,7 +331,9 @@
 					<div class="row">
 						<div class="container">
 							<div class="col-md-12">
-								<h1>OS IMAGINADORES</h1>
+								<div class="carousel-mobile-title">
+									<h1>OS IMAGINADORES</h1>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -358,7 +360,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1>PRINCÍPIOS + AÇÕES</h1>
+							<div class="carousel-mobile-title">
+								<h1>PRINCÍPIOS + AÇÕES</h1>
+							</div>
 						</div>
 						<div class="principles-content">
 							<div class="row">
@@ -746,7 +750,8 @@
 
 	<div class="col-md-4 col-sm-6 hover-bg">
 
-		<a id="modal-portfolio-6" href="#animatedModal6">
+		<div class="hover-bg">
+			<a id="modal-portfolio-6" href="#animatedModal6">
 			<div class="hover-text">
 				<h5>+info</h5>
 				<p class="lead">ENGES '16</p>
@@ -762,6 +767,9 @@
 				</div>
 			</div>
 		</div>
+		</div>
+
+		
 
 
 	</div>
@@ -1005,8 +1013,9 @@
 
 	<div class="row">
 		<div class="col-md-6">
+		<div id="email-form-container">
 			<div id="email-form" class="email-form">
-				<form id="contact-form" action="send-email.php" method="post" accept-charset="UTF-8" data-toggle="validator">
+				<form id="contact-form" action="send-email.php" method="post" accept-charset="UTF-8" data-toggle="validator" role="form">
 					<div class="form-group">
 						<input type="text" id="iname" name="name-input" data-required-error="Por favor, insira um nome." required><span class="highlight"></span><span class="bar"></span>
 						<label>Nome</label>
@@ -1027,8 +1036,6 @@
 					</button>
 				</form>
 			</div>
-
-
 			<div id="send-email-success" style="display: none;">
 				<div class="">
 					<h1>MENSAGEM ENVIADA COM SUCESSO!</h1>
@@ -1040,22 +1047,16 @@
 				</div>
 			</div>
 			<div id="send-email-animation" style="display: none;">
-				<div class="image-animation">
-					<img id="image-animation-1" class="center-block" src="img/wait_icon_1.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-2" class="center-block" src="img/wait_icon_2.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-3" class="center-block" src="img/wait_icon_3.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-4" class="center-block" src="img/wait_icon_4.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-5" class="center-block" src="img/wait_icon_5.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-6" class="center-block" src="img/wait_icon_6.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-7" class="center-block" src="img/wait_icon_7.png" height="300" width="300" alt="" style="display: none;">
-					<img id="image-animation-8" class="center-block" src="img/wait_icon_8.png" height="300" width="300" alt="" style="display: none;">
-				</div>
 				<div id="send-email-waiting">
-					<div class="">
+					<div id="sending-email-label" class="animated infinite flash">
 						<h1>ENVIANDO</h1>
 					</div>
 				</div>
 			</div>
+		</div>
+
+
+			
 		</div>
 		<div class="col-md-6">
 			<div class="contacts">
@@ -1098,7 +1099,7 @@
 
 
 
-<script src="js/bootstrapValidator.js" charset="utf-8"></script>
+
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/animatedModal.min.js"></script>
