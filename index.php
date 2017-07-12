@@ -1081,7 +1081,7 @@
 				<div class="social-media-area">
 					<a class="icon-social-media" href="http://www.facebook.com/imaginadoria" target="blank"><img src="img/icon_facebook.png" height="60" alt=""></a>
 					<a class="icon-social-media" href="http://www.instagram.com/imaginadoria" target="blank"><img src="img/icon_instagram.png" height="60" alt=""></a>
-					<a class="icon-social-media" href="http://www.linkedin.com/imaginadoria" target="blank"><img src="img/icon_linkedin.png" height="60" alt=""></a>
+					<a class="icon-social-media" href="http://www.linkedin.com/company/imaginadoria" target="blank"><img src="img/icon_linkedin.png" height="60" alt=""></a>
 					<a class="icon-social-media" href="http://www.twitter.com/imaginadoria" target="blank"><img src="img/icon_twitter.png" height="60" alt=""></a>
 				</div>
 			</div>

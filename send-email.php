@@ -19,7 +19,7 @@ try {
      $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
      $mail->Port       = 587; //  Usar 587 porta SMTP
      $mail->Username = "imaginadoria@gmail.com"; // Usuário do servidor SMTP (endereço de email)
-     $mail->Password = "imagination"; // Senha do servidor SMTP (senha do email usado)
+     $mail->Password = "imaginadudu"; // Senha do servidor SMTP (senha do email usado)
  
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
